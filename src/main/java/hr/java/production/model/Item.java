@@ -2,14 +2,13 @@ package hr.java.production.model;
 
 import java.math.BigDecimal;
 
-public class Item {
+public class Item extends NamedEntity {
 
-    String name;
     Category category;
     BigDecimal width, height, length, productionCost, sellingPrice;
 
     public Item(String name, Category category, BigDecimal width, BigDecimal height, BigDecimal length, BigDecimal productionCost, BigDecimal sellingPrice) {
-        this.name = name;
+        super(name);
         this.category = category;
         this.width = width;
         this.height = height;

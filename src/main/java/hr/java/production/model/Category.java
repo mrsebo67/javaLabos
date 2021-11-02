@@ -1,12 +1,12 @@
 package hr.java.production.model;
 
-public class Category {
+public class Category extends NamedEntity {
 
-    String name;
+
     String description;
 
     public Category(String name, String description){
-        this.name = name;
+        super(name);
         this.description = description;
     }
 
